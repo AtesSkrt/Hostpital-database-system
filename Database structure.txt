@@ -1,0 +1,28 @@
+Database Structure:
+1.	Patient Table:
+o	PatientID (primary key)
+o	Name
+o	Address
+o	DateOfBirth
+o	Insurance (foreign key to Insurance table)
+2.	Doctor Table:
+o	DoctorID (primary key)
+o	Name
+o	Specialization
+o	Department
+3.	Appointment Table:
+o	AppointmentID (primary key)
+o	PatientID (foreign key to Patient table)
+o	DoctorID (foreign key to Doctor table)
+o	DateTime
+o	Reason
+4.	Treatment Table:
+o	TreatmentID (primary key)
+o	AppointmentID (foreign key to Appointment table)
+o	Diagnosis
+o	Procedures
+o	Medications
+5.	Insurance Table (optional):
+o	InsuranceID (primary key)
+o	ProviderName
+PolicyNumber
